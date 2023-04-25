@@ -1,0 +1,138 @@
+/*------------FEUILLE DE STYLE POUR LA SALLE DE CHAT---*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*--CODE DE COULEURS--*/
+    --body-background-color: #fff;
+    --body-background-color2: #000;
+    --sndMsg-background-color: #c3c3;
+    --listMsg-background-color: #333;
+    --msg-background-color: #fff;
+    --header-background-color: #dc134c;
+    /*--CODE DE DIMENSIONS--*/
+    --listMsg-box-height: 85vh;
+    --sndMsg-box-height: 7vh;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.container{
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+/*--header bar design --*/
+.container .header{
+    width: 100%;
+    height: fit-content;
+    background: var(--header-background-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    width: fit-content;
+}
+
+.header a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.logo a{
+    text-align: left;
+}
+
+/*--NAVBAR DESIGN PART--*/
+.header nav ul{
+    list-style: none;
+    display: inline-flex;
+}
+
+.header ul li a{
+    font-weight: 700;
+    margin-right: 5px;
+}
+.header ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*--listMsg design--*/
+.container .listMsg{
+    width: 100%;
+    height: var(--listMsg-box-height);
+    background-color: var(--listMsg-background-color);
+    margin: 3px 3px 1px 3px;
+    border-radius: 1px;
+    border: #ccc 1px solid;
+    display: inline-block;
+    overflow-y: auto;
+}
+
+/*--unit box msg design--*/
+.listMsg .msg{
+    width: 80%;
+    height: fit-content;
+    max-height: 250px;
+    margin: 25px 10px;
+    padding: 5px;
+    background: var(--msg-background-color);
+    box-shadow: 5px 5px 2px #e7e7e7;
+    border-radius: 5px 10px 2px 5px;
+    word-wrap: break-word;
+}
+
+/*--sendMessage stylesheet--*/
+.container .sndMsg{
+    width: 100%;
+    height: var(--sndMsg-height);
+    background-color: var(--sndMsg-background-color);
+}
+
+.sndMsg form{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.sndMsg .inputField{
+    width: 100%;
+    height: var(--sndMsg-box-height);
+}
+
+.inputField input{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+form button[name='snd']{
+    width: 110px;
+    height: 47px;
+    margin-left: 3px;
+    cursor: pointer;
+    background-color: #dc134c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/*-run code here-*/

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*--CODE DE COULEURS--*/
+    --body-background-color: #fff;
+    --body-background-color2: #000;
+    --header-background-color: #dc134c;
+    /*--CODE DE DIMENSIONS--*/
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background: var(--body-background-color);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.container .content{
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    display: grid;
+    place-items: center;
+}
+
+/*--header bar design --*/
+.container .header{
+    width: 100%;
+    height: fit-content;
+    background: var(--header-background-color);
+    color: #fff;
+}
+
+.header .logo{
+    width: 100%;
+}
+
+.logo a{
+    text-align: left;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*--pseudo form design--*/
+.container .loginForm{
+    width: 450px;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: var(--body-background-color2);
+    box-shadow: 5px 5px 10px #555;
+    padding: 15px;
+    margin-top: 150px;
+    color: #fff;
+}
+
+form .inputField{
+    width: 100%;
+    height: fit-content;
+}
+
+.inputField input{
+    border: none;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.loginForm button[name='snd']{
+    width: 70%;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #dc134c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+}
