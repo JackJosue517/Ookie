@@ -18,3 +18,10 @@ B - Aspects Techniques
             2.L'interface back-end, écrite en PHP ou tout autre langage que tout contributeur
         trouvera utile. Cependant, les fichiers sources ne seront pas disponibles mais  ré-implémentés sur un serveur distant pour la disponibilité de la fonctionnalité
 
+C - Site web du projet Ookie
+    
+    Vous pouvez accéder à la plateforme Ookie en suivant le lien ci-dessous :
+
+    https://qwicke.000webhostapp.com/
+
+
